@@ -1,0 +1,25 @@
+.left
+{
+    position:fixed;
+    width:49%;
+    left:0;
+    border:solid black 3px;
+}
+.right
+{
+    position:fixed;
+    right:0;
+    width:49%;
+    color:aliceblue;
+    border:solid black 3px;
+    font-family:sans-serif;
+}
+.fname{
+    text-align: center;
+    color: aquamarine;
+
+}
+.right .det{
+    position:absolute;
+    right:0;
+}

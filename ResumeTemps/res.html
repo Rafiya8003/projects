@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Build your resume</title>
+        <link rel="stylesheet" href="resStyle.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div>
+            <div class="left">
+                <p>Left</p>
+                <h2 style=text-align:center> Information</h2>
+                <h4>Personal details</h4>
+                <form>
+                    <label>
+                        First Name:
+                    </label>
+                    <input type="text" class="fname-ip" ><br>
+                    <label>
+                        Last Name:
+                    </label>
+                    <input type="text" class="lname-ip"><br>
+                    <label>
+                        Email:
+                    </label>
+                    <input type="email" class="email-ip"><br>
+                    <label>
+                        Phone:
+                    </label>
+                    <input type="tel" class="phn-ip"><br>
+                    <label>
+                        Country:
+                    </label>
+                    <input type="text" class="country-ip"><br>
+                    <label>
+                        City:
+                    </label>
+                    <input type="text" class="city-ip"><br>
+                    <label>Professional Summary:</label><br>
+                    <textarea class="ps-ip" style="width:100%"></textarea>
+                </form>
+            </div>
+            <div class="right">
+                <p>Right</p>
+                <div class="fname">First Name</div>
+                <div class="lname">Last Name</div>
+                <div class="det">
+                    <div class="email">Email</div>
+                    <div class="phn">Phone</div>
+                    <div class="country">Country</div>
+                    <div class="city">City</div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            document.querySelector('.fname-ip').oninput = () =>{
+                document.querySelector('.fname').innerText = document.querySelector('.fname-ip').value;
+            }
+            document.querySelector('.lname-ip').oninput = () =>{
+                document.querySelector('.lname').innerText = document.querySelector('.lname-ip').value;
+            }
+            document.querySelector('.email-ip').oninput = () =>{
+                document.querySelector('.email').innerText = document.querySelector('.email-ip').value;
+            }
+            document.querySelector('.phn-ip').oninput = () =>{
+                document.querySelector('.phn').innerText = document.querySelector('.phn-ip').value;
+            }
+            document.querySelector('.country-ip').oninput = () =>{
+                document.querySelector('.country').innerText = document.querySelector('.country-ip').value;
+            }
+            document.querySelector('.city-ip').oninput = () =>{
+                document.querySelector('.city').innerText = document.querySelector('.city-ip').value;
+            }
+            document.querySelector('.fnameip').oninput = () =>{
+                document.querySelector('.fname').innerText = document.querySelector('.fnameip').value;
+            }
+        </script>
+    </body>
+</html>
